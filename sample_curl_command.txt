@@ -1,0 +1,5 @@
+curl command to post the job. The input.json should be in current directory.
+curl -H "Content-Type: application/json" -X POST -d @input.json http://localhost:8080/submitJob
+
+curl command to get the job status.
+curl http://localhost:8080/getJobStatus?jobId=<job id got from submit job request.>

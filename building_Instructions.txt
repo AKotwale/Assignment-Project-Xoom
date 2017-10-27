@@ -1,0 +1,13 @@
+
+1) Copy the zip into the folder.
+2) Unzip the folder.
+3) run "gradle clean build" on current directory to build the code, along with the test cases execution.
+4) to skip the test cases- run "gradle clean build -x test"
+5) once the build finishes start the application using below command on current directory.The application will start on port 8080.
+     java -jar ./build/libs/sampleproject-rest-service-0.1.0.jar
+
+6) To run the application on different port use below command with the port information.
+    java -Dserver.port=<portnumber> -jar ./build/libs/sampleproject-rest-service-0.1.0.jar
+
+6) refer sample_curl_command.txt for sample requests.
+7) debug logs can be found in ./logs/debug.log and console.
